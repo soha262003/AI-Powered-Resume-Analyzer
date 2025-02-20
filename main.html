@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        textarea { width: 80%; height: 150px; }
+        button { padding: 10px; }
+    </style>
+</head>
+<body>
+    <h2>AI Resume Analyzer</h2>
+    <form method="post">
+        <textarea name="resume_text" placeholder="Paste your resume here..."></textarea><br><br>
+        <button type="submit">Analyze Resume</button>
+    </form>
+    <h3>Extracted Skills:</h3>
+    <p>{{ skills }}</p>
+</body>
+</html>
